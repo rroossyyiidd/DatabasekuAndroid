@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/ProgramFiles/AndroidStudio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_receipt_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/ProgramFiles/AndroidStudio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_filter_1_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +29,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="3e2723" />
-                            <entry key="outputName" value="ic_receipt_black_24dp" />
+                            <entry key="outputName" value="input_nomor" />
                             <entry key="sourceFile" value="C:\Users\rroos" />
                           </map>
                         </option>
