@@ -71,9 +71,9 @@ public class UpdateData extends AppCompatActivity {
                     db.execSQL("update biodata set nama = '" + nama.getText().toString() + "'," +
                             "tgl = '" + tglLahir.getText().toString() + "'," +
                             "jk = '" + jk.getText().toString() + "'," +
-                            "alamat = '" + alamat.getText().toString() + "'," +
+                            "alamat = '" + alamat.getText().toString() + "'" +
                             "where no ='" + no.getText().toString() + "'");
-                    Toast.makeText(getApplicationContext(), "Data berhasil ditambahkan", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Data berhasil diupdate", Toast.LENGTH_SHORT).show();
                     finish();
                 }
 
