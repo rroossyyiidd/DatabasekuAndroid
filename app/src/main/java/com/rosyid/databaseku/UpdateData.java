@@ -4,6 +4,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,8 +39,11 @@ public class UpdateData extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.button11);
 
+        dataHelper = new DataHelper(this);
         SQLiteDatabase db = dataHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM biodata WHERE nama ='" + getIntent().getStringExtra("nama") + "'", null);
+        cursor = db.rawQuery("SELECT * FROM biodata WHERE nama = '" + getIntent().getStringExtra("nama") + "'", null);
+
+        Log.i("isi cursor: ", cursor.toString());
         cursor.moveToFirst();
         if (cursor.getCount() > 0) {
             cursor.moveToPosition(0);

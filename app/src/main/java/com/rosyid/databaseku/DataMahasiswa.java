@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -72,6 +73,7 @@ public class DataMahasiswa extends AppCompatActivity {
                         switch (which) {
                             case 0:
                                 Intent i = new Intent(getApplicationContext(), DetailData.class);
+                                Log.d("data extra: ", selection);
                                 i.putExtra("nama", selection);
                                 startActivity(i);
                                 break;
