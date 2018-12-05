@@ -19,7 +19,6 @@
         <activity
             android:name=".MainActivity"
             android:label="Dashboard"
-            android:parentActivityName=".MainActivity"
             android:theme="@style/Theme1" />
         <activity
             android:name=".DataMahasiswa"
