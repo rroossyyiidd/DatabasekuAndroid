@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFAF0"
+    android:padding="40dp"
+    tools:context=".UpdateData">
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:drawableLeft="@drawable/input_nomor"
+        android:inputType="number"
+        android:maxLength="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Nomor" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText11"
+        android:layout_alignLeft="@id/editText11"
+        android:layout_marginTop="10dp"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:drawableLeft="@drawable/input_nama"
+        android:inputType="text"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText12"
+        android:layout_alignLeft="@id/editText12"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal lahir" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:drawableLeft="@drawable/input_tanggal_lahir"
+        android:hint="1993-12-08"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText13"
+        android:layout_alignLeft="@id/editText13"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:layout_alignLeft="@+id/textView4"
+        android:drawableLeft="@drawable/input_jenis_kelamin"
+        android:hint="L atau P"
+        android:inputType="text"
+        android:maxLength="1" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText14"
+        android:layout_alignLeft="@+id/textView14"
+        android:text="Alamat" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:drawableLeft="@drawable/input_alamat"
+        android:inputType="text"
+        android:maxLength="100" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText15"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/simpan"
+        android:text="Simpan"
+        />
+
+</RelativeLayout>

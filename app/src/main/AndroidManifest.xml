@@ -16,10 +16,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:label="Dashboard" android:theme="@style/Theme1" />
-        <activity android:name=".DataMahasiswa" android:label="Data Mahasiswa" android:theme="@style/Theme1" />
-        <activity android:name=".InputData" android:label="Input Data" android:theme="@style/Theme1" />
-        <activity android:name=".Informasi" android:label="Informasi" android:theme="@style/Theme1" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Dashboard"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme1" />
+        <activity
+            android:name=".DataMahasiswa"
+            android:label="Data Mahasiswa"
+            android:parentActivityName=".DataMahasiswa"
+            android:theme="@style/Theme1" />
+        <activity
+            android:name=".InputData"
+            android:label="Input Data"
+            android:parentActivityName=".InputData"
+            android:theme="@style/Theme1" />
+        <activity
+            android:name=".Informasi"
+            android:label="Informasi"
+            android:parentActivityName=".Informasi"
+            android:theme="@style/Theme1" />
+        <activity
+            android:name=".UpdateData"
+            android:label="Update Data"
+            android:parentActivityName=".UpdateData"
+            android:theme="@style/Theme1" />
+        <activity
+            android:name=".DetailData"
+            android:label="Detail Data"
+            android:parentActivityName=".DetailData"
+            android:theme="@style/Theme1" />
     </application>
 
 </manifest>
