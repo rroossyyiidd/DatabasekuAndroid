@@ -43,7 +43,7 @@ public class UpdateData extends AppCompatActivity {
         SQLiteDatabase db = dataHelper.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM biodata WHERE nama = '" + getIntent().getStringExtra("nama") + "'", null);
 
-        Log.i("isi cursor: ", cursor.toString());
+//        Log.i("isi cursor: ", cursor.toString());
         cursor.moveToFirst();
         if (cursor.getCount() > 0) {
             cursor.moveToPosition(0);
@@ -78,9 +78,7 @@ public class UpdateData extends AppCompatActivity {
                 }
 
                 DataMahasiswa.da.RefreshList();
-
             }
         });
-
     }
 }
